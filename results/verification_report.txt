@@ -1,0 +1,85 @@
+== Sample
+PASS  Modeled players: 242 players total
+PASS  Cutoffs: 2500+ total minutes and 5,000+ RAPM possessions
+PASS  Features listed: TS%, 3PAr, FTr, TRB%, AST%, STL%, BLK%, TOV%, and USG%
+PASS  No missing values or duplicate players: no missing / no duplicates
+== Correlation matrix (every cell)
+PASS  Row RAPM: | **RAPM** | 1 | .35 | .33 | -.04 | .23 | .20 | -.08 | .24 | .04 | .13 |
+PASS  Row AST%: | **AST%** | .35 | 1 | .63 | .41 | -.25 | .08 | -.06 | .24 | -.36 | -.18 |
+PASS  Row USG%: | **USG%** | .33 | .63 | 1 | -.04 | -.16 | .25 | -.10 | -.08 | -.20 | -.05 |
+PASS  Row TOV%: | **TOV%** | -.04 | .41 | -.04 | 1 | .01 | .27 | -.36 | .22 | .14 | .28 |
+PASS  Row TS%: | **TS%** | .23 | -.25 | -.16 | .01 | 1 | .49 | -.38 | -.31 | .43 | .44 |
+PASS  Row FTr: | **FTr** | .20 | .08 | .25 | .27 | .49 | 1 | -.67 | -.14 | .38 | .51 |
+PASS  Row 3PAr: | **3PAr** | -.08 | -.06 | -.10 | -.36 | -.38 | -.67 | 1 | .04 | -.53 | -.69 |
+PASS  Row STL%: | **STL%** | .24 | .24 | -.08 | .22 | -.31 | -.14 | .04 | 1 | -.07 | -.13 |
+PASS  Row BLK%: | **BLK%** | .04 | -.36 | -.20 | .14 | .43 | .38 | -.53 | -.07 | 1 | .66 |
+PASS  Row TRB%: | **TRB%** | .13 | -.18 | -.05 | .28 | .44 | .51 | -.69 | -.13 | .66 | 1 |
+== Box plot
+PASS  Box plot Min: | Min (Lower Whisker) | -6.068 |
+PASS  Box plot Q1: | Q1 (25th Percentile) | -1.3025 |
+PASS  Box plot Median: | Median (50th Percentile) | 0.2295 |
+PASS  Box plot Q3: | Q3 (75th Percentile) | 2.075 |
+PASS  Box plot Upper whisker: | Upper Whisker | 6.192 |
+PASS  Box plot Upper outlier cutoff: | Outlier Cutoff | 7.141 |
+PASS  Box plot Outlier #1: | Outlier #1 | 7.541 |
+PASS  Box plot Outlier #2: | Outlier #2 | 8.395 |
+PASS  Box plot Max: | Max (Outlier #3) | 10.312 |
+PASS  Min is also the lower whisker: Min == Lower whisker
+PASS  Exactly 3 outliers, none low: 3 high, 0 low
+PASS  Max outlier is the third outlier: Max == Outlier #3
+PASS  Outlier names: Outlier 1: Giannis Antetokounmpo; Outlier 2: Shai Gilgeous-Alexander; Max Outlier: Nikola Jokić
+== VIFs
+PASS  VIF AST%: | AST% | 3.58 |
+PASS  VIF USG%: | USG% | 2.82 |
+PASS  VIF 3PAr: | 3PAr | 2.79 |
+PASS  VIF TRB%: | TRB% | 2.71 |
+PASS  VIF FTr: | FTr | 2.43 |
+PASS  VIF BLK%: | BLK% | 2.18 |
+PASS  VIF TOV%: | TOV% | 2.06 |
+PASS  VIF TS%: | TS% | 1.79 |
+PASS  VIF STL%: | STL% | 1.32 |
+PASS  All VIFs below 5: max VIF < 5
+== Overall results
+PASS  Sample size: | Sample Size | 242 |
+PASS  R2: | Coefficient of Determination | 0.45 |
+PASS  RMSE: | Root Mean Square Error | 1.86 |
+PASS  MAE: | Mean Absolute Error | 1.54 |
+PASS  Unexplained share: leaves 55% of the variance unexplained
+PASS  Model is statistically significant (F test): F p = 8.2e-26
+== Dominance analysis
+PASS  Rank 1: | 1 | AST% | 25.3% | 11.4% |
+PASS  Rank 2: | 2 | STL% | 19.1% | 8.6% |
+PASS  Rank 3: | 3 | TS% | 18.0% | 8.1% |
+PASS  Rank 4: | 4 | USG% | 14.8% | 6.7% |
+PASS  Rank 5: | 5 | *TOV% | 8.4% | 3.8% |
+PASS  Rank 6: | 6 | TRB% | 5.8% | 2.6% |
+PASS  Rank 7: | 7 | FTr | 3.9% | 1.7% |
+PASS  Rank 8: | 8 | 3PAr | 3.1% | 1.4% |
+PASS  Rank 9: | 9 | BLK% | 1.6% | 0.7% |
+PASS  Dominance total: **45.0% (R² 0.450)**
+PASS  Dominance weights sum to R2: sum == R2
+PASS  TOV% is the only negative coefficient (footnote): negative: ['TOV%'], p = 1.3e-06
+== Training, test and cross-validation
+PASS  Training n: | Sample Size | 193 (80% of overall dataset) |
+PASS  Training R2: | Coefficient of Determination | 0.443 |
+PASS  Training RMSE: | Root Mean Square Error | 1.88 |
+PASS  Training MAE: | Mean Absolute Error | 1.57 |
+PASS  Test set n (prose): test set of 49 players
+PASS  Test R2: | Test Set (49 players) | 0.401 |
+PASS  LOO R2: | Leave-One-Out Cross Validation | 0.396 |
+PASS  10-fold R2: | 10-fold Cross Validation | 0.393 |
+PASS  Prose: about 44% in training: about 44% of explained variance in the training set
+PASS  Prose: around 40% out of sample: around 40% among the test set and Cross-Validation results
+== Offense and defense
+PASS  Offensive RAPM: | Offensive RAPM | 0.615 | 0.578 |
+PASS  Defensive RAPM: | Defensive RAPM | 0.307 | 0.239 |
+PASS  Total RAPM: | Total RAPM | 0.450 | 0.396 |
+PASS  Prose: offense: explained 61.5% of the variance in 5-year Offensive
+PASS  Prose: defense: only explained 30.7% for the Defensive
+== Excel workbook
+PASS  Workbook data equals pipeline data (242 players x 12 columns): max abs difference 5.5e-14
+PASS  Workbook R2 (live LINEST): 0.4495531446
+PASS  Workbook LOO R2: 0.396272
+PASS  Workbook 10-fold R2: 0.392847
+
+74 checks passed, 0 failed

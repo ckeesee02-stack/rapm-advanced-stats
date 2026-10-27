@@ -1,0 +1,23 @@
+Coefficients:
+              Estimate Std. Error  t value  Pr(>|t|)
+(Intercept)  -21.11380    2.85970   -7.383  2.75e-12 ***
+TS%           24.94414    4.09802    6.087  4.72e-09 ***
+3PAr           3.58182    1.02335    3.500  0.000558 ***
+FTr            1.72488    1.72517    1.000  0.318434 
+TRB%           0.17497    0.04382    3.993  8.77e-05 ***
+AST%           0.15131    0.02682    5.641  4.89e-08 ***
+STL%           1.82034    0.27753    6.559  3.48e-10 ***
+BLK%           0.11281    0.12238    0.922  0.357590 
+TOV%          -0.29239    0.05892   -4.963  1.35e-06 ***
+USG%           0.05424    0.03651    1.485  0.138795 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 1.904 on 232 degrees of freedom
+Multiple R-squared:  0.4496,    Adjusted R-squared:  0.4282
+F-statistic: 21.05 on 9 and 232 DF,  p-value: < 2e-16
+
+Note: TS%, 3PAr and FTr are stored as decimals (0.607), so their estimates are per 1.00;
+divide by 100 for the effect of one percentage point. The other six stats are in percentage points.
+
+RMSE (divides by n): 1.8646    MAE: 1.5401

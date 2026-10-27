@@ -1,0 +1,15 @@
+location,value,player
+Min,-6.068,Nick Richards
+Lower whisker,-6.068,Nick Richards
+Q1,-1.3025,
+Median,0.22949999999999998,
+Q3,2.075,
+IQR,3.3775000000000004,
+Upper whisker,6.192,Stephen Curry
+Lower outlier cutoff,-6.36875,
+Upper outlier cutoff,7.14125,
+Max,10.312,Nikola Jokić
+Outlier #1,7.541,Giannis Antetokounmpo
+Outlier #2,8.395,Shai Gilgeous-Alexander
+Outlier #3,10.312,Nikola Jokić
+Outliers below lower cutoff,0.0,

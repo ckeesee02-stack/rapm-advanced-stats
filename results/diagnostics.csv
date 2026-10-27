@@ -1,0 +1,4 @@
+test,p_value
+Shapiro-Wilk on residuals,0.16208413674422079
+Breusch-Pagan,0.9771087754927811
+Ramsey RESET (power 2),0.7344336795287802
