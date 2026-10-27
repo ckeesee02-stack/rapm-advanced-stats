@@ -1,3 +1,5 @@
+# What Percentage Variation of 5-Year RAPM Can Be Explained By Advanced Statistics?
+
 Identification of Research Goal: Determining the percentage variation of 5-Year Regularized Adjusted Plus Minus that can be explained by a model comprising various advanced stats. RAPM measures a player's impact on a team's point differential per 100 possessions. It uses Ridge Regression to account for the quality of teammates and opponents on the floor (Sill, 2010).
 
 Analytical Approach: RAPM values are continuous, and various advanced stats would be used as feature variables. Therefore, the selected analytical approach for this research is the Ordinary Least Squares Multiple Linear Regression approach. This approach is used to determine the coefficient of determination, along with how each variable relates to RAPM when controlling for other variables. A Dominance Analysis is also used to see how much each variable contributes to the overall coefficient of determination.
